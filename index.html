@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bisma — Frontend Developer</title>
+  <style>
+    body{font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.5; color:#222}
+    header{background:#0f172a;color:#fff;padding:40px 20px;text-align:center}
+    .container{max-width:980px;margin:30px auto;padding:0 15px}
+    .skills{display:flex;gap:10px;flex-wrap:wrap}
+    .skill{background:#eef2ff;padding:6px 10px;border-radius:6px}
+    .projects{margin-top:20px}
+    .project{border:1px solid #eee;padding:10px;border-radius:8px;margin-bottom:12px}
+    footer{text-align:center;padding:20px;color:#666;font-size:14px}
+    a{color:#0b5fff;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bisma Naeem</h1>
+    <p>Front-End Developer — HTML • CSS • JavaScript</p>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm Bisma — BSCS student and front-end developer. I build responsive websites and clean UI.</p>
+    </section>
+
+```
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Responsive Design</div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Personal Portfolio</h3>
+    <p>Responsive single page portfolio. <a href="#" target="_blank">Live demo</a> • <a href="#" target="_blank">Code</a></p>
+  </div>
+
+  <div class="project">
+    <h3>Landing Page (Business)</h3>
+    <p>Multi-section landing page with responsive layout. <a href="#" target="_blank">Live demo</a> • <a href="#" target="_blank">Code</a></p>
+  </div>
+
+  <div class="project">
+    <h3>To-Do App (JS)</h3>
+    <p>Simple to-do with localStorage. <a href="#" target="_blank">Live demo</a> • <a href="#" target="_blank">Code</a></p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+  <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+</section>
+```
+
+  </div>
+
+  <footer>
+    © <span id="year"></span> Bisma Naeem — Frontend Developer
+  </footer>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
