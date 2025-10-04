@@ -1,0 +1,177 @@
+/* =========================================================
+   Professional CSS Structure by Bisma Naeem
+   Theme: High-Contrast Minimalist
+========================================================= */
+
+/* 1. Global Variables (The Single Source of Truth) */
+:root {
+    --color-primary: #121212;      /* Deep Black/Navy for Text & Footer (High Contrast) */
+    --color-accent: #007BFF;       /* Professional Modern Blue (Primary Interaction) */
+    --color-warning: #FFC107;      /* Subtle Warning/Highlight Yellow */
+    --color-text-body: #495057;    /* Dark Gray for high readability */
+    --color-bg-light: #F8F9FA;     /* Very Light Gray Section Background */
+    --color-bg-white: #FFFFFF;     /* Pure White for Cards and Hero */
+    
+    /* Font Definitions */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+/* 2. Base Reset and Typography */
+body {
+    font-family: var(--font-body);
+    color: var(--color-text-body);
+    background: var(--color-bg-light);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-heading);
+    font-weight: 800; /* Extra bold headings */
+    color: var(--color-primary);
+}
+
+/* 3. Navbar (Clean and Prominent) */
+.navbar {
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid #E9ECEF;
+   
+   
+}
+.navbar-brand {
+    font-size: 2.0rem;
+    font-weight: 700;
+   
+}
+.logo-initials {
+    color: var(--color-accent);
+    font-size: 1.8rem;
+    font-weight: 700;
+    
+}
+    
+.navbar .nav-link {
+    font-weight: 600;
+    /* color: var(--color-text-body) !important; */
+    transition: color 0.3s;
+    color: #0c0c0c;
+   
+    font-size: 18px;
+}
+.navbar .nav-link:hover {
+    color: var(--color-accent--) !important;
+    background-color:rgb(168, 184, 222)
+
+}
+
+/* 4. Hero Section (Maximum Readability and Impact) */
+#hero {
+    min-height: 100vh;
+    /* Hero BG: Now White, Text is Dark for high contrast */
+    background: var(--color-bg-white); 
+    padding: 150px 20px 80px; 
+}
+#hero h1 {
+    font-size: 2.0 rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: var(--color-primary); /* Dark text on white background */
+}
+#hero p {
+    font-size: 1.4rem;
+    color: var(--color-text-body);
+    font-weight: 400;
+}
+.profile-image {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 5px solid var(--color-accent); /* Accent border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Professional Button Style */
+.btn-primary {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 14px 40px;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-3px); /* Subtle 3D effect */
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* 5. General Section Styling */
+section {
+    padding: 100px 0;
+}
+section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+   
+}
+section h2::after {
+    
+    width: 80px;
+    height: 4px;
+    background: var(--color-accent);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* 6. Card Styles (Expertise & Projects) */
+.card-block { /* Changed from .card to .card-block for better semantic context */
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background: var(--color-bg-white);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Stronger but clean shadow */
+    padding: 30px;
+}
+.card-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.icon-large { /* Changed from .icon-primary to .icon-large for better naming */
+    font-size: 3rem;
+    color: var(--color-accent);
+    margin-bottom: 15px;
+}
+.project-image {
+    border-radius: 10px;
+    border: 1px solid #DEE2E6;
+   
+}
+
+/* 7. Contact Form */
+#contact .form-control {
+    border-radius: 8px;
+    padding: 14px;
+    border: 1px solid #CED4DA;
+}
+#contact .form-control:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+/* 8. Footer */
+footer {
+    padding: 30px 0;
+    background: var(--color-primary); /* Deep Black Footer */
+    color: #CED4DA;
+}
+footer span {
+    color: var(--color-accent); /* Blue Accent in Footer */
+}

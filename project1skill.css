@@ -1,0 +1,28 @@
+.navbar {
+  background-color:rgb(216, 22, 22)!important; 
+} 
+
+.navbar .nav-link {
+  color: white !important;     /* text white
+  font-weight: 500;           
+  text-decoration: none !important; 
+} */
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  color: yellow !important;    
+}
+
+/* Active page (Home etc.) highlight */
+.navbar .nav-link.active {
+  color: #ffebcd !important;   
+}
+
+.carousel .carousel-item img {
+  width: 100% !important;
+  height: 700px !important;
+  object-fit:cover;
+  
+}
+
+

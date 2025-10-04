@@ -1,77 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bisma — Frontend Developer</title>
-  <style>
-    body{font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.5; color:#222}
-    header{background:#0f172a;color:#fff;padding:40px 20px;text-align:center}
-    .container{max-width:980px;margin:30px auto;padding:0 15px}
-    .skills{display:flex;gap:10px;flex-wrap:wrap}
-    .skill{background:#eef2ff;padding:6px 10px;border-radius:6px}
-    .projects{margin-top:20px}
-    .project{border:1px solid #eee;padding:10px;border-radius:8px;margin-bottom:12px}
-    footer{text-align:center;padding:20px;color:#666;font-size:14px}
-    a{color:#0b5fff;text-decoration:none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bisma Naeem | Expert Front-End Engineer & UI Specialist</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Bisma Naeem</h1>
-    <p>Front-End Developer — HTML • CSS • JavaScript</p>
-  </header>
+     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container py-2">
+            <a class="navbar-brand fw-bold" href="#hero">
+                <span class="logo-initials me-1">BN</span> Bisma Naeem
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link mx-2" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#expertise">Expertise</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#projects">Work</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-lg-3 fw-bold" href="#contact">Hire Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hi, I'm Bisma — BSCS student and front-end developer. I build responsive websites and clean UI.</p>
-    </section>...
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills">
-    <div class="skill">HTML</div>
-    <div class="skill">CSS</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">Responsive Design</div>
-  </div>
-</section>
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+            <img src="Profilewebpage-removebg-preview.png" alt="Bisma Naeem Profile" class="profile-image">
+            <h1 class="fw-bolder">
+                  Engineer <span class="text-primary">High-Performance<br></span> Digital Experiences_Global clientele.
+            </h1>
+            <p class="lead mx-auto" style="max-width: 800px;">
+                🌟Front-End Engineer & UI/UX Specialist dedicated to clean code, accessibility, and measurable business results for global clientele Engineering Seamless Digital Experiences 🌟.
+            </p>
+            <a href="#projects" class="btn btn-primary mt-4">View Featured Work <i class="bi bi-arrow-right-circle-fill"></i></a>
+        </div>
+    </section>
 
-<section id="projects" class="projects">
-  <h2>Projects</h2>
+    <section id="about" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="text-center">My Professional Philosophy</h2>
+            <div class="row mt-5 align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="philosophy.png" alt="Design Philosophy" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6 text-start">
+                    <h4 class="fw-bold mb-3 text-primary">Strategy-First Front-End Development.</h4>
+                    <p >
+                        I believe great websites are not just about design, but about performance, accessibility, and scalability. My approach is strategy-first—ensuring every project is lightweight, future-ready, and built to global accessibility standards. Inspired by leading tech companies, I code with one goal in mind: create seamless digital experiences that deliver real impact.
+                    </p>
+                    <p>
+                        Every line of code is written with performance and the end-user experience in mind, a practice adopted from the world's leading tech companies.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-dark mt-3 px-4">Let's Connect for a Proposal</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="project">
-    <h3>Personal Portfolio</h3>
-    <p>Responsive single page portfolio. <a href="#" target="_blank">Live demo</a> • <a href="#" target="_blank">Code</a></p>
-  </div>
+    <section id="expertise" class="py-5 bg-white">
+        <div class="container py-4 text-center">
+            <h2>Core Technical Expertise</h2>
+            <div class="row mt-5 g-4">
+                
+                <div class="col-md-4">
+                    <div class="card-block h-100">
+                        <i class="bi bi-code-slash icon-large mb-3"></i>
+                        <h5 class="mt-2 fw-bold">Modular Architecture</h5>
+                        <p class="small">Mastery in BEM methodology and component-based UI development for clean, readable, and scalable codebases.</p>
+                    </div>
+                </div>
 
-  <div class="project">
-    <h3>Landing Page (Business)</h3>
-    <p>Multi-section landing page with responsive layout. <a href="#" target="_blank">Live demo</a> • <a href="#" target="_blank">Code</a></p>
-  </div>
+                <div class="col-md-4">
+                    <div class="card-block h-100">
+                        <i class="bi bi-rocket-takeoff icon-large mb-3"></i>
+                        <h5 class="mt-2 fw-bold">Web Performance</h5>
+                        <p class="small">Deep knowledge of optimization techniques to ensure sub-second load times and high Lighthouse scores.</p>
+                    </div>
+                </div>
 
-  <div class="project">
-    <h3>To-Do App (JS)</h3>
-    <p>Simple to-do with localStorage. <a href="#" target="_blank">Live demo</a> • <a href="#" target="_blank">Code</a></p>
-  </div>
-</section>
+                <div class="col-md-4">
+                    <div class="card-block h-100">
+                        <i class="bi bi-universal-access icon-large mb-3"></i>
+                        <h5 class="mt-2 fw-bold">Accessibility & UX</h5>
+                        <p class="small">Commitment to WCAG complianceand translating complex wireframes into intuitive, universally usable interfaces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-  <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-</section>
-```
+    <section id="projects" class="py-5 bg-light">
+        <div class="container py-4 text-center">
+            <h2>Featured Client Work</h2>
+            <div class="row mt-5 g-4">
+                
+                <div class="col-md-4">
+                    <div class="card-block">
+                        <img src="E-commerce.jpg" class="img-fluid mb-3 project-image" alt="E-commerce Platform Redesign">
+                        <h5 class="fw-bold">E-commerce Platform Redesign & Optimization</h5>
+                        <p class="small text-muted">A complete front-end overhaul focusing on User Flow and Conversion Rate Optimization (CRO).</p>
+                        <a href="project1.html" target="_blank" class="text-primary small fw-bold">View Live Project <i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card-block">
+                        <img src="image (1).png" class="img-fluid mb-3 project-image" alt="SaaS Landing Page">
+                        <h5 class="fw-bold">High-Converting Product Landing Page</h5>
+                        <p class="small text-muted"> A lightning-fast page designed to maximize sign-ups (Leads), resulting in a 22% lower bounce rate.</p>
+                        <a href="project2.html" target="_blank" class="text-primary small fw-bold">View Live Project <i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
 
-  </div>
+                <div class="col-md-4">
+                    <div class="card-block">
+                        <img src="imageproj.png" class="img-fluid mb-3 project-image" alt="Data Visualization Dashboard">
+                        <h5 class="fw-bold">Accessible & Scalable Data Dashboard UI</h5>
+                        <p class="small text-muted">Developed the front-end for a complex internal analytics dashboard using BEM architecture.</p>
+                        <a href="project3.html" target="_blank" class="text-primary small fw-bold">View Live Project <i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
 
-  <footer>
-    © <span id="year"></span> Bisma Naeem — Frontend Developer
-  </footer>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    document.getElementById('year').innerText = new Date().getFullYear();
-  </script>
+    <section id="contact" class="py-5 bg-white">
+        <div class="container py-4 text-center">
+            <h2 class="mb-4">Let's Build Your Digital Success</h2>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Ready to transform your design into a world-class front-end reality? Get in touch for a detailed proposal.
+            </p>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-6">
+                    <form action="https://formspree.io/f/mzzjvbpw" method="POST" class="p-5 bg-light rounded-3 shadow-lg">
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" name="name" placeholder="Full Name / Company Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg" name="_replyto" placeholder="Business Email Address" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Tell me about your project goals, budget, and timeline." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold">Send Project Inquiry <i class="bi bi-send-fill"></i></button>
+                    </form>
+                    <p class="mt-3 text-muted small">Or email directly: <a href="mailto:bismanaeem548@gmail.com" class="text-primary fw-bold">bismanaeem548@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <footer class="text-center py-4 bg-dark text-white">
+        <div class="container">
+            <p class="mb-0 small">&copy; <span id="year">2025</span> <span class="text-primary fw-bold">Bisma Naeem</span> | Engineered for Excellence.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('year').innerText = new Date().getFullYear();
+    </script>
 </body>
 </html>
